@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: #DDD;
+}
+.App-intro {
+  font-size: large;
+}
+
+.Copyright {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 30px;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.Tag-Cloud-Row {
+  padding: 15px;
+}
+.Tag-Desc-Row {
+  background-color: #222;
+  color: #DDD;
+  padding: 15px;
+}
+.Contact-Row {
+  padding: 15px;
+}
+
+.Links-Row {
+  background-color: #222;
+  color: #DDD;
+  padding: 15px;
+}
+.Link a {
+  color: #DDD;
+  text-decoration: none;
+}
+.Link a:hover {
+  text-decoration: underline;
+}
+
+.text, .Links {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.tag {
+  padding: 15px;
+  cursor: pointer;
+  display:inline-block;
+}
+.Link {
+  padding: 15px;
+}
+
+
+
