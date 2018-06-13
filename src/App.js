@@ -56,8 +56,11 @@ class App extends Component {
         <div className="Links-Row">
           {this.renderLinks()}
         </div>
-
+        <div className="Opinions-Row">
+            Opinions are my own!
+          </div>
         <footer className="App-footer">
+ 
           <div className="Copyright">
             FerRory Networks ©2018
             </div>

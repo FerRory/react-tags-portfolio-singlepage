@@ -1,10 +1,17 @@
 .App {
   text-align: center;
+  background-color: #DDD;
 }
 
 
 
 .App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: #DDD;
+}
+.App-footer {
   background-color: #222;
   height: 50px;
   padding: 20px;
@@ -18,6 +25,11 @@
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+  padding: 30px;
+
+}
+.Opinions-Row {
+
   padding: 30px;
 }
 .App-title {
