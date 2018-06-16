@@ -4,7 +4,7 @@ export const links = [
         "url": "http://hq.ferrory.net"
     },
     {
-        "name": "FerRory's Bricks (BLOG)",
+        "name": "FerRory's Bricks (Blog)",
         "url": "http://bricks.ferrory.net"
     },
     {
@@ -14,6 +14,14 @@ export const links = [
     {
         "name": "FerRory's Bricks (Instagram)",
         "url": "https://www.instagram.com/ferrorysbricks/",
+    },
+    {
+        "name": "Rory Schellekens (Twitter)",
+        "url": "https://twitter.com/FerRory"
+    },
+    {
+        "name": "Rory Schellekens (GitHub)",
+        "url": "https://github.com/FerRory"
     },
     {
         "name": "Rory Schellekens (LinkedIn)",

@@ -1,69 +1,57 @@
 import React, { Component } from 'react';
-import { tags } from './Tags';
-import { links } from './Links';
+import { tags } from './data/Tags';
+import { links } from './data/Links';
+import { text } from './data/Text';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      tagText: "Hit a #Tag!",
-      showLinks: true
+      tagText: text.defaultTagText,
     }
     this.renderTag = this.renderTag.bind(this);
   }
 
   renderTag(tag, tagId) {
     return (
-      <div className="tag" key={tagId} onClick={() => { this.setState({ tagText: tag.text }) }}>
+      <li className="tag" key={tagId} onClick={() => { this.setState({ tagText: tag.text }) }}>
         #{tag.tag}
-      </div>
+      </li>
     )
   }
+  
   renderLink(link, linkId) {
     return (
-      <div className="Link" key={linkId}>
+      <li className="Link" key={linkId}>
         <a target="_blank" href={link.url}>{link.name}</a>
-      </div>
+      </li>
     )
-  }
-
-  renderLinks() {
-    if (this.state.showLinks) {
-      return (<div className="Links">{links.map(this.renderLink)} </div>);
-    }
-    else {
-      return "";
-    }
   }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Rory (FerRory)</h1>
+          <h1 className="App-title">{text.title}</h1>
         </header>
-
-        <div className="Tag-Cloud-Row">
-          {tags.map(this.renderTag)}
+        <div className="Light-Row">
+          <ul>{tags.map(this.renderTag)}</ul>
         </div>
-        <div className="Tag-Desc-Row">
-          <p className="text">{this.state.tagText}</p>
+        <div className="Dark-Row">
+          <p>{this.state.tagText}</p>
         </div>
-        <div className="Contact-Row">
-        <p className="text">Contact: Rory @ FerRory .NET</p>
+        <div className="Light-Row">
+          <p>{text.contact}</p>
         </div>
-        <div className="Links-Row">
-          {this.renderLinks()}
+        <div className="Dark-Row">
+          <ul>{links.map(this.renderLink)}</ul>
         </div>
-        <div className="Opinions-Row">
-            Opinions are my own!
-          </div>
+        <div className="Light-Row">
+          <p>{text.extra}</p>
+        </div>
         <footer className="App-footer">
- 
-          <div className="Copyright">
-            FerRory Networks ©2018
-            </div>
+          <p>{text.copyright}</p>
         </footer>
       </div>
     );
