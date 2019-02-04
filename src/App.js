@@ -24,7 +24,7 @@ class App extends Component {
   renderLink(link, linkId) {
     return (
       <li className="Link" key={linkId}>
-        <a target="_blank" href={link.url}>{link.name}</a>
+        <a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a>
       </li>
     )
   }
