@@ -1,18 +1,18 @@
 .App {
   text-align: center;
-  background-color: #DDD;
+  background-color: #FFF;
 }
 .App-header, .App-footer {
-  background-color: #00A;
+  background-color: #003DA5;
   padding: 20px;
-  color: #DDD;
+  color: #FFF;
 }
 .App-title {
   font-size: 1.5em;
 }
 .Dark-Row {
-  background-color: #00A;
-  color: #DDD;
+  background-color: #003DA5;
+  color: #FFF;
   padding: 15px;
 }
 .Light-Row {
@@ -28,7 +28,7 @@ ul
   padding: 20px;
 }
 .Link a {
-  color: #DDD;
+  color: #FFF;
   text-decoration: none;
 }
 
