@@ -4,10 +4,6 @@ export const tags = [
 		"text": "Father of a beautiful daughter born in the Spring  of 2015!"
 	},
 	{
-		"tag":  "LEGO",
-		"text": "Collector of LEGO Speed Champions cars!"
-	},
-	{
 		"tag": "Swimming",
 		"text": "Loves to swim!"
 	},
